@@ -2,13 +2,178 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Pratik Gohil</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratik Gohil</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
 <body>
- Pratik Gohil
+  <div id="home">
+    <nav class="teal lighten-1">
+      <div class="nav-wrapper">
+        <svg id="logo" class="brand-logo" viewBox="0 0 666 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M36.6563 6.632C47.6003 6.632 57.0563 8.696 65.0243 12.824C73.0883 16.856 79.2323 22.664 83.4563 30.248C87.7763 37.832 89.9363 46.76 89.9363 57.032C89.9363 67.304 87.7763 76.232 83.4563 83.816C79.2323 91.304 73.0883 97.064 65.0243 101.096C57.0563 105.032 47.6003 107 36.6563 107H5.40833V6.632H36.6563ZM36.6563 96.2C49.6163 96.2 59.5043 92.792 66.3203 85.976C73.1363 79.064 76.5443 69.416 76.5443 57.032C76.5443 44.552 73.0883 34.808 66.1763 27.8C59.3603 20.792 49.5203 17.288 36.6563 17.288H18.5123V96.2H36.6563Z"
+            stroke="white" stroke-width="5" />
+          <path d="M120.325 17.288V50.84H156.901V61.64H120.325V96.2H161.221V107H107.221V6.488H161.221V17.288H120.325Z"
+            stroke="white" stroke-width="5" />
+          <path
+            d="M212.873 108.008C206.249 108.008 200.297 106.856 195.017 104.552C189.833 102.152 185.753 98.888 182.777 94.76C179.801 90.536 178.265 85.688 178.169 80.216H192.137C192.617 84.92 194.537 88.904 197.897 92.168C201.353 95.336 206.345 96.92 212.873 96.92C219.113 96.92 224.009 95.384 227.561 92.312C231.209 89.144 233.033 85.112 233.033 80.216C233.033 76.376 231.977 73.256 229.865 70.856C227.753 68.456 225.113 66.632 221.945 65.384C218.777 64.136 214.505 62.792 209.129 61.352C202.505 59.624 197.177 57.896 193.145 56.168C189.209 54.44 185.801 51.752 182.921 48.104C180.137 44.36 178.745 39.368 178.745 33.128C178.745 27.656 180.137 22.808 182.921 18.584C185.705 14.36 189.593 11.096 194.585 8.792C199.673 6.488 205.481 5.336 212.009 5.336C221.417 5.336 229.097 7.688 235.049 12.392C241.097 17.096 244.505 23.336 245.273 31.112H230.873C230.393 27.272 228.377 23.912 224.825 21.032C221.273 18.056 216.569 16.568 210.713 16.568C205.241 16.568 200.777 18.008 197.321 20.888C193.865 23.672 192.137 27.608 192.137 32.696C192.137 36.344 193.145 39.32 195.161 41.624C197.273 43.928 199.817 45.704 202.793 46.952C205.865 48.104 210.137 49.448 215.609 50.984C222.233 52.808 227.561 54.632 231.593 56.456C235.625 58.184 239.081 60.92 241.961 64.664C244.841 68.312 246.281 73.304 246.281 79.64C246.281 84.536 244.985 89.144 242.393 93.464C239.801 97.784 235.961 101.288 230.873 103.976C225.785 106.664 219.785 108.008 212.873 108.008Z"
+            stroke="white" stroke-width="5" />
+          <path d="M278.669 6.632V107H265.565V6.632H278.669Z" stroke="white" stroke-width="5" />
+          <path
+            d="M377.034 35.72C374.25 29.864 370.218 25.352 364.938 22.184C359.658 18.92 353.514 17.288 346.506 17.288C339.498 17.288 333.162 18.92 327.498 22.184C321.93 25.352 317.514 29.96 314.25 36.008C311.082 41.96 309.498 48.872 309.498 56.744C309.498 64.616 311.082 71.528 314.25 77.48C317.514 83.432 321.93 88.04 327.498 91.304C333.162 94.472 339.498 96.056 346.506 96.056C356.298 96.056 364.362 93.128 370.698 87.272C377.034 81.416 380.73 73.496 381.786 63.512H341.754V52.856H395.754V62.936C394.986 71.192 392.394 78.776 387.978 85.688C383.562 92.504 377.754 97.928 370.554 101.96C363.354 105.896 355.338 107.864 346.506 107.864C337.194 107.864 328.698 105.704 321.018 101.384C313.338 96.968 307.242 90.872 302.73 83.096C298.314 75.32 296.106 66.536 296.106 56.744C296.106 46.952 298.314 38.168 302.73 30.392C307.242 22.52 313.338 16.424 321.018 12.104C328.698 7.688 337.194 5.48 346.506 5.48C357.162 5.48 366.57 8.12 374.73 13.4C382.986 18.68 388.986 26.12 392.73 35.72H377.034Z"
+            stroke="white" stroke-width="5" />
+          <path d="M491.992 107H478.888L426.184 27.08V107H413.08V6.488H426.184L478.888 86.264V6.488H491.992V107Z"
+            stroke="white" stroke-width="5" />
+          <path d="M527.434 17.288V50.84H564.01V61.64H527.434V96.2H568.33V107H514.33V6.488H568.33V17.288H527.434Z"
+            stroke="white" stroke-width="5" />
+          <path
+            d="M641.006 107L617.102 65.96H601.262V107H588.158V6.632H620.558C628.142 6.632 634.526 7.928 639.71 10.52C644.99 13.112 648.926 16.616 651.518 21.032C654.11 25.448 655.406 30.488 655.406 36.152C655.406 43.064 653.39 49.16 649.358 54.44C645.422 59.72 639.47 63.224 631.502 64.952L656.702 107H641.006ZM601.262 55.448H620.558C627.662 55.448 632.99 53.72 636.542 50.264C640.094 46.712 641.87 42.008 641.87 36.152C641.87 30.2 640.094 25.592 636.542 22.328C633.086 19.064 627.758 17.432 620.558 17.432H601.262V55.448Z"
+            stroke="white" stroke-width="5" />
+        </svg>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="slide-out">
+      <h5 class="center">Pratik Gohil</h5>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div style="display: flex; justify-content: center; align-items: center;" class="row">
+      <img class="col l6 hide-on-med-and-down" src="assets/animation.svg" alt="computer guy">
+      <div class="col s12 offset-s2 offset-m3 l4 ">
+        <h4>Hey, i'm Pratik Gohil.</h4>
+        <p class="flow-text">A web designer and developer <br> from Mumbai, India.</p>
+        <a class="waves-effect waves-light btn col s8 m6 l6" href="assets/resume.pdf" download>Download Resume <i
+            class="material-icons">file_download</i> </a>
+      </div>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center;  flex-direction: column;" id="projects" class="">
+    <h2 class="center">Projects</h2>
+    <div class="divider"></div>
+    <div style="display: flex;flex-wrap: wrap;" class="row section">
+      <div class="col l1"></div>
+      <div class="card col l4">
+        <div class="card-image">
+          <img src="assets/project (1).png " alt="project">
+        </div>
+      </div>
+      <div class="col l4">
+        <h3>Shopping List</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, totam!</p>
+        <button class="waves-effect waves-light btn"><a class="white-text"
+            href="https://github.com/Pratik-Gohil/shopping_list" target="_blank">Github</a></button>
+        <button class="waves-effect waves-light btn"><a class="white-text" href="" target="_blank">View
+            Site</a></button>
+      </div>
+      <div class="col l1"></div>
+    </div>
+    <div class="divider"></div>
+    <div style="display: flex; flex-wrap: wrap;" class="row section">
+      <div class="col l1"></div>
+      <div class="card col l4">
+        <div class="card-image">
+          <img src="assets/project (2).png " alt="project">
+        </div>
+      </div>
+      <div class="col l4">
+        <h3>Recipe App</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, totam!</p>
+        <button class="waves-effect waves-light btn"><a target="_blank" class="white-text"
+            href="https://github.com/Pratik-Gohil/food_ninja">Github</a></button>
+        <button class="waves-effect waves-light btn "><a target="_blank" href="https://pwafoodninja.web.app/"
+            class="white-text">View
+            Site</a></button>
+      </div>
+      <div class="col l1"></div>
+    </div>
+    <div class="divider"></div>
+  </div>
+  <div style="text-align: center;" id="contact">
+    <h2 class="">Get in touch.</h2>
+    <div class="row">
+      <form class="col s12 center">
+        <div class="row">
+          <div class="input-field col s12 l3 m8 offset-m2 offset-l3 ">
+            <i class="material-icons prefix">phone</i>
+            <input id="phone" type="tel" class="validate">
+            <label for="phone">Phone</label>
+          </div>
+          <div class="input-field col s12 l3 m8 offset-m2 ">
+            <i class="material-icons prefix">mail</i>
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12 m8 l6 offset-m2 offset-l3">
+            <i class="material-icons prefix">message</i>
+            <textarea id="message" class="materialize-textarea" data-length="120"></textarea>
+            <label for="message">Message</label>
+          </div>
+        </div>
+        <div class="row">
+          <button class="waves-effect waves-light btn col s4 offset-s4">Send</button>
+        </div>
+      </form>
+    </div>
+    <footer class="page-footer teal lighten-1">
+      <div class="container">
+        <div class="row hide-on-small">
+          <div class="col l6 s12 hide-on-med-and-down">
+            <h5 class="white-text">Contacts</h5>
+            <a class="white-text" href="tel:+91 8104922414">
+              <i class="material-icons prefix">phone</i>
+              +91 8104922414
+            </a>
+            <br>
+            <a class="white-text" href="mailto:pr.tik@gmail.com">
+              <i class="material-icons prefix">mail</i>
+              pr.tik@gmail.com
+            </a>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Follow Me</h5>
+            <ul style="display: flex; justify-content: space-evenly; align-items: center;" class="center">
+              <li><a target="_blank" class="grey-text text-lighten-3"
+                  href="https://twitter.com/pratikgohil123">Twitter</a></li>
+              <li><a target="_blank" class="grey-text text-lighten-3"
+                  href="https://www.freecodecamp.org/pratik_gohil">FreeCodeCamp</a>
+              </li>
+              <li><a target="_blank" class="grey-text text-lighten-3" href="https://github.com/pratik-gohil">Github</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2020 Pratik Gohil. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+    $('.sidenav li').click(() => {
+      $('.sidenav').sidenav('close');
+    })
+  </script>
 </body>
 
 </html>
