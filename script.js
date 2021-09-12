@@ -124,6 +124,13 @@ function handleTouchMove(evt) {
   yDown = null;
 }
 
+var recaptcha = document.querySelector("#g-recaptcha-response");
+window.onload = function () {
+  if (recaptcha) {
+    recaptcha.setAttribute("required", "required");
+  }
+};
+
 const contact_form = document.querySelector(".contact_form");
 
 contact_form.addEventListener("submit", (e) => {
@@ -139,13 +146,6 @@ contact_form.addEventListener("submit", (e) => {
   })
     .then((res) => console.log("res", res))
     .catch((err) => console.error(err));
+  recaptcha.reset();
   contact_form.reset();
 });
-
-window.onload = function () {
-  var recaptcha = document.querySelector("#g-recaptcha-response");
-
-  if (recaptcha) {
-    recaptcha.setAttribute("required", "required");
-  }
-};
