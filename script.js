@@ -27,11 +27,6 @@ if (currentTheme) {
   if (currentTheme === "dark") {
     themeToggle.checked = true;
   }
-
-  let recaptcha = document.querySelector("#rc-anchor-container");
-  if (recaptcha) {
-    recaptcha.attr("data-theme", currentTheme);
-  }
 }
 
 let menu = document.querySelector(".menu");
