@@ -1,0 +1,61 @@
+.main {
+  height: 100vh;
+  width: 100%;
+  background: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.name {
+  font-size: 32px;
+}
+
+.job {
+  font-size: 18px;
+}
+
+.about_me {
+  line-height: 2rem;
+  padding: 20px 0;
+}
+
+.download_cv {
+  border: none;
+  background: inherit;
+  color: inherit;
+  font-weight: 700;
+  margin: 1rem 0;
+  outline: none;
+}
+
+.download_cv > a:hover {
+  background: var(--color);
+  color: var(--bg-secondary);
+}
+
+.download_cv > a {
+  padding: 12px 1rem;
+  border: 2px solid var(--color);
+}
+
+.contact {
+  line-height: 2rem;
+}
+
+.social_links > a:not(:last-child) {
+  border-right: 1px solid var(--color);
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+@media only screen and (min-width: 780px) {
+  .main {
+    padding: 4rem;
+  }
+  .about_me {
+    width: 75%;
+    font-size: 20px;
+  }
+}

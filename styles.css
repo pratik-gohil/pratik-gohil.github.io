@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --menu-width: 260px;
+}
+
+html[data-theme="light"] {
+  --bg-primary: #f5f6f8;
+  --bg-secondary: #fff;
+  --color: #495057;
+}
+
+html[data-theme="dark"] {
+  --bg-primary: #22252f;
+  --bg-secondary: #2b2e3b;
+  --color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color);
+}
+
+::selection {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--color);
+  transition: all ease 0.5s;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--color);
+}
+
+.container {
+  display: flex;
+  background: var(--bg-secondary);
+}
+
+.menu {
+  background: var(--bg-primary);
+  box-sizing: border-box;
+  transition: left 250ms linear;
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  width: var(--menu-width);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  line-height: 4rem;
+  font-size: 20px;
+  z-index: 1;
+}
+.menu.close {
+  left: calc(var(--menu-width) * -1);
+}
+
+.logo {
+  background-color: var(--color);
+  border-radius: 0.2rem;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: var(--bg-secondary);
+  font-weight: bold;
+}
+
+.toggle-sidebar {
+  display: none;
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  line-height: 2rem;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform ease 250ms;
+  z-index: 1;
+}
+.toggle-sidebar.open {
+  transform: scaleX(-1);
+}
+
+.toggle-theme {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+}
+
+.switch {
+  position: relative;
+  background: var(--bg-secondary);
+  padding: 0 28px;
+  border-radius: 3rem;
+  border: 2px solid var(--color);
+  line-height: 2.5rem;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  left: 0;
+  line-height: 40px;
+  transition: all 0.5s ease;
+  font-size: 20px;
+}
+
+.checkbox {
+  display: none;
+}
+.checkbox + .slider:before {
+  content: "🌞";
+}
+.checkbox:checked + .slider:before {
+  content: "🌜";
+}
+.checkbox:checked + .slider {
+  transform: translateX(130%);
+}
+
+@media only screen and (max-width: 780px) {
+  .toggle-sidebar {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .main {
+    margin-left: var(--menu-width);
+  }
+  .toggle-theme {
+    position: fixed;
+  }
+}
