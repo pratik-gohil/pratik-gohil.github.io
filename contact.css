@@ -1,8 +1,7 @@
 .main {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 100px 2rem;
-  overflow: scroll;
 }
 
 .contact_form {
@@ -80,6 +79,7 @@
 
 @media only screen and (min-width: 768px) {
   .main {
+    height: 100vh;
     padding: 100px 4rem;
     overflow: hidden;
   }
