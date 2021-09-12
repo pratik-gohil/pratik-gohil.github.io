@@ -27,6 +27,12 @@ if (currentTheme) {
   if (currentTheme === "dark") {
     themeToggle.checked = true;
   }
+
+  var recaptcha = document.querySelector("#g-recaptcha-response");
+
+  if (recaptcha) {
+    recaptcha.attr("data-theme", currentTheme);
+  }
 }
 
 let menu = document.querySelector(".menu");
