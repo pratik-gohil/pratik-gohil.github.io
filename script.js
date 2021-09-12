@@ -130,6 +130,7 @@ contact_form.addEventListener("submit", (e) => {
   e.preventDefault();
   const data = new FormData(contact_form);
   const [name, email, message] = data.values();
+  console.log(name, email, message);
 
   fetch("/POST", {
     method: "POST",
