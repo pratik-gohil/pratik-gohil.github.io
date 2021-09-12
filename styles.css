@@ -152,3 +152,8 @@ a {
     position: fixed;
   }
 }
+
+.rc-anchor {
+  background: var(--bg-secondary) !important;
+  color: var(--color) !important;
+}
