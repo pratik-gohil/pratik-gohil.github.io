@@ -1,17 +1,8 @@
 window.onload = function () {
-  var recaptcha = document.querySelector("#g-recaptcha-response");
+  var recaptcha_res = document.querySelector("#g-recaptcha-response");
 
-  if (recaptcha) {
-    recaptcha.setAttribute("required", "required");
-  }
-
-  const currentTheme = localStorage.getItem("theme")
-    ? localStorage.getItem("theme")
-    : null;
-
-  if (recaptcha) {
-    console.log(recaptcha);
-    recaptcha.attr("data-theme", currentTheme);
+  if (recaptcha_res) {
+    recaptcha_res.setAttribute("required", "required");
   }
 };
 

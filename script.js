@@ -28,12 +28,9 @@ if (currentTheme) {
     themeToggle.checked = true;
   }
 
-  var recaptcha = document.querySelector("#g-recaptcha-response");
+  let recaptcha = document.querySelector("#rc-anchor-container");
 
-  if (recaptcha) {
-    console.log(recaptcha);
-    recaptcha.attr("data-theme", currentTheme);
-  }
+  recaptcha.attr("data-theme", currentTheme);
 }
 
 let menu = document.querySelector(".menu");
