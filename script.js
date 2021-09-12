@@ -145,8 +145,10 @@ contact_form.addEventListener("submit", (e) => {
     },
     body: data,
   })
-    .then((res) => console.log("res", res))
+    .then((res) => {
+      console.log("res", res);
+      grecaptcha.reset();
+      contact_form.reset();
+    })
     .catch((err) => console.error(err));
-  grecaptcha.reset();
-  contact_form.reset();
 });
