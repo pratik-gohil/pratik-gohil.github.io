@@ -52,7 +52,6 @@ toggle_sidebar.addEventListener("click", (e) => {
 });
 
 main.addEventListener("click", () => {
-  console.log(deviceIsMobile.matches, sidebarIsOpen);
   if (deviceIsMobile.matches && sidebarIsOpen) {
     closeSidebar();
   }
@@ -124,3 +123,20 @@ function handleTouchMove(evt) {
   xDown = null;
   yDown = null;
 }
+
+const contact_form = document.querySelector(".contact_form");
+
+contact_form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const data = new FormData(contact_form);
+  const name = data.get("name");
+  const email = data.get("email");
+  const message = data.get("message");
+
+  fetch("/POST", {
+    method: "POST",
+    body: { "form-name": "form 1", name, email, message },
+  })
+    .then(() => alert("Success!"))
+    .catch((error) => alert(error));
+});

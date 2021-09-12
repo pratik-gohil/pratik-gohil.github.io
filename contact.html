@@ -33,10 +33,15 @@
       </div>
       <div class="main">
         <h1>Get In Touch</h1>
-        <form class="form" action="POST" data-netlify="true">
-          <input name="name" type="text" placeholder="Name" />
-          <input name="email" type="text" placeholder="Email" />
-          <textarea name="message" placeholder="Message" rows="7"></textarea>
+        <form class="contact_form" action="POST" data-netlify="true">
+          <input required name="name" type="text" placeholder="Name" />
+          <input required name="email" type="text" placeholder="Email" />
+          <textarea
+            required
+            name="message"
+            placeholder="Message"
+            rows="7"
+          ></textarea>
           <div data-netlify-recaptcha="true"></div>
           <button>Send</button>
         </form>
