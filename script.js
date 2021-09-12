@@ -29,8 +29,9 @@ if (currentTheme) {
   }
 
   let recaptcha = document.querySelector("#rc-anchor-container");
-
-  recaptcha.attr("data-theme", currentTheme);
+  if (recaptcha) {
+    recaptcha.attr("data-theme", currentTheme);
+  }
 }
 
 let menu = document.querySelector(".menu");
