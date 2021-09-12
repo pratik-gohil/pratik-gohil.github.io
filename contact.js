@@ -11,7 +11,13 @@ window.onload = function () {
 
   let recaptcha = document.querySelector("#rc-anchor-container");
   if (recaptcha) {
-    recaptcha.attr("data-theme", currentTheme);
+    if (currentTheme == "dark") {
+      recaptcha.classList.remove("rc-anchor-light");
+      recaptcha.classList.add("rc-anchor-dark");
+    } else {
+      recaptcha.classList.remove("rc-anchor-dark");
+      recaptcha.classList.add("rc-anchor-light");
+    }
   }
 };
 
