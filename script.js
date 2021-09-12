@@ -144,7 +144,7 @@ const contact_form = document.querySelector(".contact_form");
 // });
 
 window.onload = function () {
-  var recaptcha = document.querySelector(".g-recaptcha");
+  var recaptcha = document.querySelector("#g-recaptcha-response");
 
   if (recaptcha) {
     recaptcha.setAttribute("required", "required");
