@@ -128,9 +128,8 @@ const contact_form = document.querySelector(".contact_form");
 
 contact_form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const data = new FormData(contact_form);
-  const [name, email, message] = data.values();
-  console.log(name, email, message);
+  const data = new URLSearchParams(new FormData(contact_form));
+  const [form_name, name, email, message] = data.values();
 
   fetch("/POST", {
     method: "POST",
