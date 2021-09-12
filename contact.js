@@ -4,21 +4,6 @@ window.onload = function () {
   if (recaptcha_res) {
     recaptcha_res.setAttribute("required", "required");
   }
-
-  const currentTheme = localStorage.getItem("theme")
-    ? localStorage.getItem("theme")
-    : null;
-
-  let recaptcha = document.querySelector("#rc-anchor-container");
-  if (recaptcha) {
-    if (currentTheme == "dark") {
-      recaptcha.classList.remove("rc-anchor-light");
-      recaptcha.classList.add("rc-anchor-dark");
-    } else {
-      recaptcha.classList.remove("rc-anchor-dark");
-      recaptcha.classList.add("rc-anchor-light");
-    }
-  }
 };
 
 var modal = document.querySelector("#form-modal");
