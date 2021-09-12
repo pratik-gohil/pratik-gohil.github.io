@@ -34,7 +34,7 @@ contact_form.addEventListener("submit", (e) => {
     body: data,
   })
     .then((res) => {
-      modal.style.display = "block";
+      modal.style.display = "flex";
       grecaptcha.reset();
       contact_form.reset();
     })
