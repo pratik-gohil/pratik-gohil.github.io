@@ -17,7 +17,7 @@
   width: 100%;
   margin: 1rem 0;
   padding: 0.5rem;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   outline: none;
   background: var(--bg-primary);
   color: var(--color);
@@ -41,7 +41,8 @@
   border: 2px solid var(--color);
 }
 
-.contact_form > button:hover {
+.contact_form > button:hover,
+.contact_form > button:focus {
   background: var(--color);
   color: var(--bg-secondary);
 }

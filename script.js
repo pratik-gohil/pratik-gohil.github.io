@@ -142,3 +142,11 @@ const contact_form = document.querySelector(".contact_form");
 //     .catch((err) => console.error(err));
 //   this.reset();
 // });
+
+window.onload = function () {
+  var recaptcha = document.querySelector(".g-recaptcha");
+
+  if (recaptcha) {
+    recaptcha.setAttribute("required", "required");
+  }
+};

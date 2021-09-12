@@ -30,7 +30,8 @@
   outline: none;
 }
 
-.download_cv > a:hover {
+.download_cv > a:hover,
+.download_cv > a:focus {
   background: var(--color);
   color: var(--bg-secondary);
 }
