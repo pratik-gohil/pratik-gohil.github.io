@@ -139,7 +139,7 @@ contact_form.addEventListener("submit", (e) => {
   })
     .then((res) => console.log("res", res))
     .catch((err) => console.error(err));
-  form.reset();
+  contact_form.reset();
 });
 
 window.onload = function () {
