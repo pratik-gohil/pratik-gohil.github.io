@@ -8,7 +8,7 @@ window.onload = function () {
 
 var modal = document.querySelector("#form-modal");
 
-var close_modal = document.querySelector(".close");
+var close_modal = document.querySelector(".close-modal");
 
 close_modal.onclick = function () {
   modal.style.display = "none";
