@@ -133,7 +133,7 @@ contact_form.addEventListener("submit", (e) => {
 
   fetch("/POST", {
     method: "POST",
-    body: { "form-name": "form 1", name, email, message },
+    body: JSON.stringify({ "form-name": "form 1", name, email, message }),
   })
     .then((res) => console.log("res", res))
     .catch((error) => console.error(err));
