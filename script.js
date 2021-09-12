@@ -137,5 +137,5 @@ contact_form.addEventListener("submit", (e) => {
     body: JSON.stringify({ "form-name": "form 1", name, email, message }),
   })
     .then((res) => console.log("res", res))
-    .catch((error) => console.error(err));
+    .catch((err) => console.error(err));
 });
