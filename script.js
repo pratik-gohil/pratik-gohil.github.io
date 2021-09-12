@@ -31,6 +31,7 @@ if (currentTheme) {
   var recaptcha = document.querySelector("#g-recaptcha-response");
 
   if (recaptcha) {
+    console.log(recaptcha);
     recaptcha.attr("data-theme", currentTheme);
   }
 }

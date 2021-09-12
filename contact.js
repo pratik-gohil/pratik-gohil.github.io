@@ -4,6 +4,15 @@ window.onload = function () {
   if (recaptcha) {
     recaptcha.setAttribute("required", "required");
   }
+
+  const currentTheme = localStorage.getItem("theme")
+    ? localStorage.getItem("theme")
+    : null;
+
+  if (recaptcha) {
+    console.log(recaptcha);
+    recaptcha.attr("data-theme", currentTheme);
+  }
 };
 
 var modal = document.querySelector("#form-modal");
