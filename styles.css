@@ -156,7 +156,7 @@ a {
   content: "🌜";
 }
 .checkbox:checked + .slider {
-  transform: translateX(130%);
+  transform: translateX(170%) scale(-1, 1);
 }
 
 @media only screen and (max-width: 780px) {
