@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Get In Touch</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="testimonials.css" />
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>"
@@ -33,31 +33,9 @@
         <span class="logo"> PG </span>
       </div>
       <div class="main">
-        <h1>Get In Touch</h1>
-        <form class="contact_form" method="POST" data-netlify="true">
-          <input
-            required
-            autocomplete="off"
-            name="name"
-            type="text"
-            placeholder="Name"
-          />
-          <input
-            required
-            autocomplete="off"
-            name="email"
-            type="text"
-            placeholder="Email"
-          />
-          <textarea
-            required
-            name="message"
-            placeholder="Message"
-            rows="7"
-          ></textarea>
-          <div data-netlify-recaptcha="true"></div>
-          <button>Send</button>
-        </form>
+        <h1>Testimonials</h1>
+        <div class="reviews"></div>
+      </div> 
       </div>
     </div>
     <div class="toggle-sidebar">
@@ -75,14 +53,7 @@
         <span class="slider" for="checkbox"> </span>
       </label>
     </div>
-    <div id="form-modal" class="modal">
-      <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <p>Message has been submitted.</p>
-      </div>
-    </div>
 
     <script src="script.js"></script>
-    <script src="contact.js"></script>
   </body>
 </html>

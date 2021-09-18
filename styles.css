@@ -27,7 +27,7 @@ html[data-theme="dark"] {
 }
 
 ::selection {
-  display: none;
+  background: rgba(232, 232, 232, 0.5);
 }
 
 * {
@@ -151,9 +151,4 @@ a {
   .toggle-theme {
     position: fixed;
   }
-}
-
-.rc-anchor {
-  background: var(--bg-secondary) !important;
-  color: var(--color) !important;
 }

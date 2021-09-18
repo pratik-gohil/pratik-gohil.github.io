@@ -1,0 +1,53 @@
+.main {
+  min-height: 100vh;
+  padding: 100px 2rem;
+}
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+}
+.review {
+  padding: 20px;
+  background: var(--bg-primary);
+}
+.review > * {
+  padding: 5px;
+}
+.username {
+  font-weight: 700;
+}
+.country {
+  display: flex;
+}
+.country_flag {
+  width: 30px;
+}
+.country_name {
+  margin: 5px;
+}
+.stars {
+  color: #ffb33e;
+  font-size: 1rem;
+  letter-spacing: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .review {
+    padding: 10px;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .review {
+    width: calc((100% / 2) - 10px);
+    padding: 20px;
+    background: var(--bg-primary);
+  }
+  .review:nth-child(2n + 1) {
+    margin: 10px 10px 10px 0;
+  }
+  .review:nth-child(2n + 2) {
+    margin: 10px 0 10px 10px;
+  }
+}
