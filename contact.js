@@ -26,7 +26,7 @@ contact_form.addEventListener("submit", (e) => {
   e.preventDefault();
   const data = new URLSearchParams(new FormData(contact_form));
 
-  fetch("/POST", {
+  fetch("https://pratikgohil.tk/POST", {
     method: "POST",
     headers: {
       "Content-Type": "application/x-www-form-urlencoded",
