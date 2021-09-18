@@ -163,6 +163,9 @@ a {
   .toggle-sidebar {
     display: block;
   }
+  .checkbox:checked + .slider {
+    transform: translateX(160%) scale(-1, 1);
+  }
 }
 
 @media only screen and (min-width: 780px) {
@@ -172,8 +175,5 @@ a {
   .toggle-theme {
     position: fixed;
   }
-  .checkbox:checked + .slider {
-display: none;
-    transform: translateX(160%) scale(-1, 1);
-  }
+  
 }
