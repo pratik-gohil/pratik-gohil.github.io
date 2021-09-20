@@ -1,9 +1,9 @@
 fetch(
-  "https://cors-anywhere.herokuapp.com/https://www.fiverr.com/ratings/index?user_id=78265358&as_seller=true&sort_by=recent&page_size=5",
+  "https://www.fiverr.com/ratings/index?user_id=78265358&as_seller=true&sort_by=recent&page_size=5",
   {
     method: "GET",
     headers: {
-      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Origin": "https://pratikgohil.tk/",
       "Access-Control-Allow-Headers":
         "Origin, X-Requested-With, Content-Type, Accept",
     },
