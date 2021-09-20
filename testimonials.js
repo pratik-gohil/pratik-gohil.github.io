@@ -3,9 +3,10 @@ fetch(
   {
     method: "GET",
     headers: {
-      "Access-Control-Allow-Origin": "https://pratikgohil.tk/",
+      "Access-Control-Allow-Origin": "https://pratikgohil.tk",
       "Access-Control-Allow-Headers":
         "Origin, X-Requested-With, Content-Type, Accept",
+      "Access-Control-Allow-Methods": "PUT, POST, GET, DELETE, OPTIONS",
     },
   }
 )
