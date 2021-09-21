@@ -8,10 +8,12 @@ const toggleTheme = (theme) => {
 themeToggle.addEventListener("change", switchTheme);
 
 function switchTheme() {
-  if (this.checked) {
+  if (themeToggle.checked) {
+    console.log("checked");
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("theme", "dark");
   } else {
+    console.log("!checked");
     document.documentElement.setAttribute("data-theme", "light");
     localStorage.setItem("theme", "light");
   }
@@ -28,6 +30,13 @@ if (currentTheme) {
     themeToggle.checked = true;
   }
 }
+
+document.querySelector(".switch").addEventListener("keypress", (event) => {
+  if (event.keyCode == "32") {
+    themeToggle.checked = !themeToggle.checked;
+    switchTheme();
+  }
+});
 
 let menu = document.querySelector(".menu");
 let toggle_sidebar = document.querySelector(".toggle-sidebar");

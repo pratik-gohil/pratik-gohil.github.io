@@ -60,21 +60,27 @@
 }
 
 .modal-content {
-  position: relative;
   background-color: var(--bg-primary);
-  border: 1px solid var(--color);
-  padding: 3rem;
+  border: 2px solid var(--color);
+  padding: 1.5rem;
+  font-size: 20px;
 }
 
 .close-modal {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 10px;
-  color: var(--color);
-  font-size: 28px;
-  font-weight: bold;
+  padding: 5px 12px;
+  margin-top: 20px;
   cursor: pointer;
+  background: var(--color);
+  color: var(--bg-primary);
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+  background: var(--bg-primary);
+  color: var(--color);
+  border: 1px solid var(--color);
 }
 
 @media only screen and (min-width: 768px) {
