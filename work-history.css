@@ -98,3 +98,10 @@
     top: -30px;
   }
 }
+
+.company-name {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
