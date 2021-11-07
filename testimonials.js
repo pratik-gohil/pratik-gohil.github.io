@@ -42,7 +42,7 @@
   review.className = "review";
   review.innerHTML = `
             <p class="user"><a href="https://fiverr.com/${username}" target="_blank" class="username">${username}</a> <span class="stars"><i class="fas fa-star"></i>${value}</span></p>
-            <p class="country"><img class="country_flag" src="https://lipis.github.io/flag-icon-css/flags/4x3/${reviewer_country_code.toLowerCase()}.svg"/> <span class="country_name">${reviewer_country}</span></p>
+            <p class="country"><i class="flag flag-${reviewer_country_code}"></i> <span class="country_name">${reviewer_country}</span></p>
             <p class="comment">${comment}</p>
             `;
 
