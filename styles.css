@@ -75,6 +75,11 @@ a {
   left: calc(var(--menu-width) * -1);
 }
 
+.menu_link.active {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
 .logo {
   background-color: var(--color);
   border-radius: 0.2rem;
